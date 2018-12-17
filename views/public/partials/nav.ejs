@@ -1,0 +1,33 @@
+<!--================Header Menu Area =================-->
+<header class="main_menu_area">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/myLogo.png" alt="" width="80%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item <% if (activeStatus == 'home') { %> active <% } %>"><a class="nav-link" href="<%= domain %>">Home</a></li>
+                <li class="nav-item <% if (activeStatus == 'about') { %> active <% } %>"><a class="nav-link" href="about">About Us</a></li>
+                <li class="nav-item <% if (activeStatus == 'events') { %> active <% } %>"><a class="nav-link" href="events">Events</a></li>
+                <li class="nav-item <% if (activeStatus == 'gallery') { %> active <% } %>"><a class="nav-link" href="gallery">Gallery</a></li>
+                <li class="nav-item dropdown submenu">
+<a class="nav-link dropdown-toggle <% if (activeStatus == 'blog' || activeStatus == 'singleBlog' || activeStatus == 'elements' || activeStatus == 'service') { %> active <% } %>" href="#" id="navbarDropdown"
+    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="singleBlog">Blog Details</a></li>
+                        <li class="nav-item"><a class="nav-link" href="elements">Elements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service">Service</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item <% if (activeStatus == 'contact') { %> active <% } %>"><a class="nav-link" href="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--================End Header Menu Area =================-->
