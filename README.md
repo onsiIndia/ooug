@@ -1,2 +1,2 @@
 OOUG
-by Santosh Mahto
+by team OOUG
