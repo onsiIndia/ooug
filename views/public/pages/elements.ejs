@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>
-            <%= title %>
-        </title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/header.ejs %>
+    <title>
+        <%= title %>
+    </title>
 
-        <!--favicon-->
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    </head>
-    <body>
+    <!-- ==== common nav bar === -->
+    <% include ../partials/header.ejs %>
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/nav.ejs %>
+</head>
+
+<body>
+
+    <!-- ==== common nav bar === -->
+    <% include ../partials/nav.ejs %>
 
         <!--================Banner Area =================-->
         <section class="banner_area">
@@ -32,7 +34,7 @@
             </div>
         </section>
         <!--================End Banner Area =================-->
-        
+
         <!--================Buttons Area =================-->
         <section class="buttons_area p_100">
             <div class="container">
@@ -43,7 +45,7 @@
             </div>
         </section>
         <!--================End Buttons Area =================-->
-        
+
         <!--================Progress Bar Area =================-->
         <section class="progress_bar_area">
             <div class="container">
@@ -152,11 +154,11 @@
             </div>
         </section>
         <!--================End Progress Bar Area =================-->
-        
+
         <!--================Circle Chart Area =================-->
         <section class="circle_chart_area">
             <div class="container">
-               <h3 class="elements_title">Loaders </h3>
+                <h3 class="elements_title">Loaders </h3>
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="circle_progress circular style-polygon" data-percentage="75" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
@@ -164,7 +166,7 @@
                                 <strong></strong>
                                 <span class="percentage"></span>
                                 <h4>Hard work</h4>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -173,7 +175,7 @@
                                 <strong></strong>
                                 <span class="percentage"></span>
                                 <h4>Creativity</h4>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -182,7 +184,7 @@
                                 <strong></strong>
                                 <span class="percentage"></span>
                                 <h4>Good luck</h4>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -191,14 +193,14 @@
                                 <strong></strong>
                                 <span class="percentage"></span>
                                 <h4>Development</h4>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--================End Circle Chart Area =================-->
-        
+
         <!--================Mileston Area =================-->
         <section class="mileston_area">
             <div class="container">
@@ -232,7 +234,7 @@
             </div>
         </section>
         <!--================End Mileston Area =================-->
-        
+
         <!--================End Banner Area =================-->
         <section class="service_feature element_service">
             <div class="container">
@@ -272,9 +274,10 @@
             </div>
         </section>
         <!--================End Banner Area =================-->
-        
+
         <!-- ==== common footer with javaScript === -->
         <% include ../partials/footer.ejs %>
 
-    </body>
+</body>
+
 </html>

@@ -10,7 +10,9 @@ const ELEMENTS = 'public/pages/elements';
 const GALLERY = 'public/pages/gallery';
 const SERVICE = 'public/pages/service';
 const EVENTS = 'public/pages/events';
-const SINGLE_BLOG = 'public/pages/single-blog';
+const TEAM = 'public/pages/team';
+const PROJECT = 'public/pages/project';
+const EROOR404 = '404';
 
 /* ============================================================
 ------------------------default data for website using middlevare----------------
@@ -59,6 +61,24 @@ router.get('/blog', function(req, res) {
     });
 });
 
+// team page
+router.get('/team', function(req, res) {
+    res.render(TEAM, {
+        domain: url,
+        activeStatus: 'team',
+        title: "Team | OOUG"
+    });
+});
+
+// project page
+router.get('/project', function(req, res) {
+    res.render(PROJECT, {
+        domain: url,
+        activeStatus: 'project',
+        title: "Project | OOUG"
+    });
+});
+
 // contact page
 router.get('/contact', function(req, res) {
     res.render(CONTACT, {
@@ -78,7 +98,7 @@ router.get('/elements', function(req, res) {
 });
 
 // gallery page
-router.get('/gallery', function (req, res) {
+router.get('/gallery', function(req, res) {
     res.render(GALLERY, {
         domain: url,
         activeStatus: 'gallery',
@@ -87,7 +107,7 @@ router.get('/gallery', function (req, res) {
 });
 
 // service page
-router.get('/service', function (req, res) {
+router.get('/service', function(req, res) {
     res.render(SERVICE, {
         domain: url,
         activeStatus: 'service',
@@ -96,7 +116,7 @@ router.get('/service', function (req, res) {
 });
 
 // events page
-router.get('/events', function (req, res) {
+router.get('/events', function(req, res) {
     res.render(EVENTS, {
         domain: url,
         activeStatus: 'events',
@@ -105,7 +125,7 @@ router.get('/events', function (req, res) {
 });
 
 // single blog page
-router.get('/singleBlog', function (req, res) {
+router.get('/singleBlog', function(req, res) {
     res.render(SINGLE_BLOG, {
         domain: url,
         activeStatus: 'singlBlog',
@@ -115,7 +135,7 @@ router.get('/singleBlog', function (req, res) {
 
 /* GET 404 page. */
 router.get('/*', function(req, res) {
-    res.status(404).render('404');
+    res.status(404).render(EROOR404);
 });
 
 module.exports = router;

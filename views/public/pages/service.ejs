@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>
-            <%= title %>
-        </title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/header.ejs %>
+    <title>
+        <%= title %>
+    </title>
 
-        <!--favicon-->
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    </head>
-    <body>
+    <!-- ==== common nav bar === -->
+    <% include ../partials/header.ejs %>
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/nav.ejs %>
+</head>
+
+<body>
+
+    <!-- ==== common nav bar === -->
+    <% include ../partials/nav.ejs %>
 
         <!--================Banner Area =================-->
         <section class="banner_area">
@@ -217,9 +219,10 @@
             </div>
         </section>
         <!--================End Service Solution Area =================-->
-        
+
         <!-- ==== common footer with javaScript === -->
         <% include ../partials/footer.ejs %>
 
-    </body>
+</body>
+
 </html>

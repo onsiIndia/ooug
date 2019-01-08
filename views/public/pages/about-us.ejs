@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title><%= title %></title>
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/header.ejs %>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+        <%= title %>
+    </title>
 
-        <!--favicon-->
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    </head>
-    <body>
+    <!-- ==== common nav bar === -->
+    <% include ../partials/header.ejs %>
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/nav.ejs %>
+        <style>
+            .feature_item p {
+                max-width: 90%;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!-- ==== common nav bar === -->
+    <% include ../partials/nav.ejs %>
 
         <!--================Banner Area =================-->
         <section class="banner_area">
@@ -29,6 +38,60 @@
             </div>
         </section>
         <!--================End Banner Area =================-->
+
+        <!-- ================ message Details ==================-->
+        <section id="msg" class="container pt-5">
+            <div class="row feature_inner">
+                <div class="col-12">
+                    <div class="feature_item">
+                        <div class="text-left pl-3">
+                            <img src="img/icon/f-icon-3.png" alt="">
+                            <h4>President's Message</h4>
+                        </div>
+                        <p class="text-left pb-0">Dear All,</p>
+                        <p class="text-justify pl-4">
+                            I feel really proud to be a part of this esteemed organisation.8 years down the lane,I couldn't have imagined that a small step taken by me would turn into a giant leap. We have seen many ups and downs together and I can proudly say that we've come across
+                            all the hurdles together with team efforts and will power.Odisha Oracle Users Group is not just a group for me,it's a part of me and my family.OOUGians are family members before being the group members.
+                            <br> We at OOUG try to nurture every student with utmost care and make them realize their true potential so that they can achieve success. Regular workshops, seminars and competitions make us distinguished and the favourite
+                            choice for every student.I hope that OOUG continues to prosper in the future and it continues to make the students corporate ready.
+                            <br> My best wishes and regards,
+                            <br> Proffesor Amiya Kumar Sahoo (President,OOUG)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================ Ends message Details ==================-->
+
+        <!-- ================ Home Details ==================-->
+        <section class="container mt-2">
+            <div class="row feature_inner">
+                <div class="col-lg-6 col-12">
+                    <div id="vision" class="feature_item">
+                        <div class="f_icon">
+                            <img src="img/icon/f-icon-1.png" alt="">
+                        </div>
+                        <h4>Vision</h4>
+                        <p class="text-justify">
+                            Our vision is to enhance the inner talent of every individual student in the best way possible.We are constantly trying to encourage students to achieve their full potential. Our vision is to make our country proud and prosper with the help of youth empowerment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div id="mission" class="feature_item">
+                        <div class="f_icon">
+                            <img src="img/icon/f-icon-2.png" alt="">
+                        </div>
+                        <h4>Mission</h4>
+                        <p class="text-justify">
+                            Our group's purpose is to allow all students to experience learning, success and become life-long learners and contributing members of our group.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================ Ends Home Details ==================-->
 
         <!--================Challange Area =================-->
         <section class="challange_area p_100">
@@ -44,7 +107,7 @@
                             <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor.
                                 Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
                             <div class="c_video">
-                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=62QYQE6k7tg"><img src="img/icon/video-icon.png" alt="">See how we work </a>
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=HthSuKkeWOY"><img src="img/icon/video-icon.png" alt="">See how we work </a>
                             </div>
                         </div>
                     </div>
@@ -194,19 +257,38 @@
         </section>
         <!--================End We Are Company Area =================-->
 
-        <!--================End We Are Company Area =================-->
+        <!--================ ready to talk Area =================-->
         <section class="talk_area">
             <div class="container">
                 <div class="talk_text">
                     <h4>Are you ready to talk?</h4>
-                    <a href="mailto:contact@sierracompany.com">contact@sierracompany.com</a>
+                    <a href="mailto:contact@onsi.in">contact@onsi.in</a>
                 </div>
             </div>
         </section>
-        <!--================End We Are Company Area =================-->
+        <!--================End ready to talk Area =================-->
+        <!--================ About ooug Area =================-->
+        <section class="ourStory py-5">
+            <div class="container l_title left_company_text">
+                <h2 class="text-center py-2">OOUG</h2>
+                <p class="text-justify px-5">
+                    Odisha Oracle Users Group is an esteemed organisation established in 2011 under the proficient guidance of Prof.Amiya Kumar Sahoo and has spread it's wings all across the world.Our student are well established corporate members serving the nation with
+                    pride.
+                </p>
+                <br><br>
+                <h2 class="text-center py-2">Our Story</h2>
+                <p class="text-justify px-5">
+                    OOUG is a non profit organization started by like minded users who think such a community is required in India where the amount of Oracle user base is humongous. The idea of this group is to share what the Oracle users have learned from using Oracle technology
+                    over the years with fellow users who have similar interest. OOUG provides Oracle technology and database professionals,students the opportunity to enhance their productivity and influence the quality, usability, and support of Oracle
+                    technology. The OOUG is composed of Oracle professionals committed to helping fellow IT professionals develop solutions to their business challenges.
+                </p>
+            </div>
+        </section>
+        <!--================End About ooug Area =================-->
 
         <!-- ==== common footer with javaScript === -->
         <% include ../partials/footer.ejs %>
 
-    </body>
+</body>
+
 </html>
