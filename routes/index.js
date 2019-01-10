@@ -6,12 +6,15 @@ const INDEX = 'public/pages/index';
 const ABOUT = 'public/pages/about-us';
 const BLOG = 'public/pages/blog';
 const CONTACT = 'public/pages/contact';
-const ELEMENTS = 'public/pages/elements';
 const GALLERY = 'public/pages/gallery';
 const SERVICE = 'public/pages/service';
 const EVENTS = 'public/pages/events';
 const TEAM = 'public/pages/team';
 const PROJECT = 'public/pages/project';
+const ELEMENTS = 'public/pages/elements';
+const ELEMENTSBLOG = 'public/pages/elementsBlog';
+const ELEMENTSGALLERY = 'public/pages/elementsGallery';
+const ELEMENTSSERVICE = 'public/pages/elementsService';
 const EROOR404 = '404';
 
 /* ============================================================
@@ -124,12 +127,42 @@ router.get('/events', function(req, res) {
     });
 });
 
-// single blog page
-router.get('/singleBlog', function(req, res) {
-    res.render(SINGLE_BLOG, {
+// elements page
+router.get('/elements', function(req, res) {
+    res.render(ELEMENTS, {
         domain: url,
-        activeStatus: 'singlBlog',
-        title: "Singl Blog | OOUG"
+        activeStatus: 'elements',
+        title: "Elements | OOUG"
+    });
+});
+
+
+// elements blog page
+router.get('/elementsBlog', function(req, res) {
+    res.render(ELEMENTSBLOG, {
+        domain: url,
+        activeStatus: 'elements',
+        title: "Elements | Blog | OOUG"
+    });
+});
+
+
+// elements Gallery page
+router.get('/elementsGallery', function(req, res) {
+    res.render(ELEMENTSGALLERY, {
+        domain: url,
+        activeStatus: 'elements',
+        title: "Elements | Gallery | OOUG"
+    });
+});
+
+
+// elements page
+router.get('/elementsService', function(req, res) {
+    res.render(ELEMENTSSERVICE, {
+        domain: url,
+        activeStatus: 'elements',
+        title: "Elements | Service | OOUG"
     });
 });
 

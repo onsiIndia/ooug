@@ -16,7 +16,6 @@
 
     <!-- ==== common nav bar === -->
     <% include ../partials/header.ejs %>
-
 </head>
 
 <body>
@@ -28,211 +27,403 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
-                    <h2>Blog</h2>
-                    <p>Read the news</p>
+                    <h2>Projects</h2>
+                    <p> Persistent team efforts</p>
                 </div>
             </div>
         </section>
         <!--================End Banner Area =================-->
 
-        <!--================Blog Main Area =================-->
-        <section class="blog_main_area p_100">
+        <!--================End Banner Area =================-->
+        <section class="service_feature">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="single_blog_inner">
-                            <div class="s_blog_main">
-                                <div class="blog_img">
-                                    <img class="img-fluid" src="img/blog/blog-1.jpg" alt="">
-                                    <div class="blog_date">
-                                        <h4>29</h4>
-                                        <h5>October, 2017</h5>
-                                    </div>
-                                </div>
-                                <div class="blog_text">
-                                    <a href="#">
-                                        <h4>Let us introduce you the best apps</h4>
-                                    </a>
-                                    <div class="blog_author">
-                                        <a href="#">By Lore Papp-Dinea</a>
-                                        <a href="#">Design</a>
-                                    </div>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio ves-tibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit.
-                                        Etiam nec odio vestibul. </p>
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor
-                                        tempus. Donec maximus ipsum non ornare vestibulum. Sed libero nibh, feugiat at enim id, bibendum sollicitudin arcu. Aliquam elit nibh, finibus eget mauris non, pretium vehicula ipsum. Class aptent taciti sociosqu
-                                        ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean metus metus, porttitor ac bibendum sit amet, mattis non erat. Duis libero eros, vehicula sit amet velit id, mattis venenatis massa.</p>
-                                    <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis
-                                        viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. Quisque laoreet vel risus et luctus. Fusce eleifend purus vel eros cursus imperdiet. Aliquam lacinia dolor sollicitudin pretium interdum.
-                                        Nam velit dolor, eleifend eget felis ac, finibus accumsan dui. Fusce quis magna urna. </p>
-                                </div>
+                <div class="row feature_inner" style="margin-bottom: 10px;">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-1.png" alt="">
                             </div>
-                            <div class="s_blog_social">
-                                <h3>Share</h3>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="blog_author">
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img class="rounded-circle" src="img/blog/blog-author.png" alt="">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4>Michael Smith, <span>Author</span></h4>
-                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus doloructus. Fusce eleifend purus vel eros </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog_comment">
-                                <h3>Comments (2)</h3>
-                                <div class="media">
-                                    <img src="img/comment/comment-1.png" alt="">
-                                    <div class="d-flex">
-                                        <h4>Sophia Willams</h4>
-                                        <h5>Oct 29, 2017</h5>
-                                    </div>
-                                    <div class="media-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec ele mentum id, suscipit id nulla. Nulla sit amet luctus doloructus. Fusce eleifend purus vel eros</p>
-                                        <a href="#">Reply</a>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <img src="img/comment/comment-2.png" alt="">
-                                    <div class="d-flex">
-                                        <h4>Gabriel Smith</h4>
-                                        <h5>Oct 29, 2017</h5>
-                                    </div>
-                                    <div class="media-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec ele mentum id, suscipit id nulla. Nulla sit amet luctus doloructus. Fusce eleifend purus vel eros</p>
-                                        <a href="#">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog_comment_form">
-                                <h3>Leave a comment</h3>
-                                <form class="row contact_us_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                                    <div class="form-group col-sm-6">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                                    </div>
-                                    <div class="form-group col-sm-6">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                        <button type="submit" value="submit" class="btn submit_btn form-control">Send</button>
-                                    </div>
-                                </form>
-                            </div>
+                            <h4>E Notes</h4>
+                            <p class="text-justify">
+                                It is an web based application to provide soft copy of study material for subjects of our University. The users can create a free account to download the materials. The graphical user interface is simple and attractive so that the materials are easily
+                                accessible.
+                            </p>
+                            <a class="more_btn" href="project#ENotes">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="blog_right_sidebar">
-                            <aside class="r_widget search_widget">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
-                                    </span>
-                                </div>
-                            </aside>
-                            <aside class="r_widget categories_widget">
-                                <div class="r_w_title">
-                                    <h3>Categories</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="#">Vestibulum maximus</a></li>
-                                    <li><a href="#">Nisi eu lobortis pharetra</a></li>
-                                    <li><a href="#">Orci quam accumsan</a></li>
-                                    <li><a href="#">Auguen pharetra massa</a></li>
-                                    <li><a href="#">Tellus ut nulla</a></li>
-                                    <li><a href="#"> Etiam egestas viverra </a></li>
-                                </ul>
-                            </aside>
-                            <aside class="r_widget insta_widget">
-                                <div class="r_w_title">
-                                    <h3>Instagram</h3>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.instagram.com/?hl=en">
-                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-1.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/?hl=en">
-                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-2.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/?hl=en">
-                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-3.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/?hl=en">
-                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-4.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/?hl=en">
-                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-5.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/?hl=en">
-                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-6.jpg" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </aside>
-                            <aside class="r_widget tag_widget">
-                                <div class="r_w_title">
-                                    <h3>Tags</h3>
-                                </div>
-                                <ul>
-                                    <li><a href="#">branding</a></li>
-                                    <li><a href="#">identity</a></li>
-                                    <li><a href="#">design</a></li>
-                                    <li><a href="#">inspiration</a></li>
-                                    <li><a href="#">web design</a></li>
-                                    <li><a href="#">video</a></li>
-                                    <li><a href="#">photography</a></li>
-                                </ul>
-                            </aside>
-                            <aside class="r_widget quote_widget">
-                                <div class="r_w_title">
-                                    <h3>Quote</h3>
-                                </div>
-                                <img src="img/icon/quote-icon.png" alt="">
-                                <p>Vivamus in urna eu enim porttitor consequat. Proin vitae pulvinar libero. Proin ut hendrerit metus. Aliquam erat volut pat. Donec fermen tum convallis.</p>
-                            </aside>
-                            <aside class="r_widget add_widget">
-                                <div class="r_w_title">
-                                    <h3>Add</h3>
-                                </div>
-                                <img class="img-fluid" src="img/add.jpg" alt="">
-                            </aside>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-2.png" alt="">
+                            </div>
+                            <h4>Online Exam System</h4>
+                            <p class="text-justify">
+                                Online Exam System was a major contribution by OOUG towards society, by using Online Exam System we were able to save paper and more than 1000 students appeared in SQL Exam. From last two years we have been conducting exam with help of this software.
+                            </p>
+                            <a class="more_btn" href="project#OES">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-3.png" alt="">
+                            </div>
+                            <h4>Windows 8 Website</h4>
+                            <p class="text-justify">
+                                Windows 8 based website was designed for our mega event Sampark'13, it was designed keeping in mind the theme of latest operating system Windows 8. It proved to be a major attraction as students from all over the India appreciated our work.Thank You everyone.
+                            </p>
+                            <a class="more_btn" href="project#windows">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-4.png" alt="">
+                            </div>
+                            <h4>3D Website</h4>
+                            <p class="text-justify">
+                                We became the first group in India to make a fully functional 3-D Website using WebGl , this project symbolizes our work in upcoming future technology, and in upcoming year we will be focusing more on these types of technology.
+                            </p>
+                            <a class="more_btn" href="project#!">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-5.png" alt="">
+                            </div>
+                            <h4>Amiya Sahoo Website</h4>
+                            <p class="text-justify">
+                                We got the privilege to make the official website of our president Mr.Amiya Kumar Sahoo who is known for his optimistic behaviour , he has got more than 20 years of professional experience in IT industry and training in various parts of the country.
+                            </p>
+                            <a class="more_btn" href="http://www.amiyasahoo.in">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-2.png" alt="">
+                            </div>
+                            <h4>Advanced Feedback System</h4>
+                            <p class="text-justify">
+                                Feedback is an essential part of education and training programmes. It helps learners to maximise their potential at different stages of training, raise their awareness of strengths and areas for improvement, and identify actions to be taken.
+                            </p>
+                            <a class="more_btn" href="project#!">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-6.png" alt="">
+                            </div>
+                            <h4>Download test</h4>
+                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
+                            <a class="more_btn" href="project#!">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="feature_item">
+                            <div class="f_icon">
+                                <img src="img/icon/f-icon-4.png" alt="">
+                            </div>
+                            <h4>Coming Soon</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis exercitationem corporis neque, mollitia iste laborum modi tenetur quae maxime! Expedita debitis natus praesentium harum reiciendis?
+                            </p>
+                            <a class="more_btn" href="project#!">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================End Blog Main Area =================-->
+        <!--================End Banner Area =================-->
+
+        <!--================Circle Chart Area =================-->
+        <section class="circle_chart_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="circle_progress circular style-polygon" data-percentage="75" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                            <div class="circle_progress_inner">
+                                <strong></strong>
+                                <span class="percentage"></span>
+                                <h4>javaScript</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="circle_progress circular style-polygon" data-percentage="83" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                            <div class="circle_progress_inner">
+                                <strong></strong>
+                                <span class="percentage"></span>
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="circle_progress circular style-polygon" data-percentage="45" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                            <div class="circle_progress_inner">
+                                <strong></strong>
+                                <span class="percentage"></span>
+                                <h4>Android</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="circle_progress circular style-polygon" data-percentage="95" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                            <div class="circle_progress_inner">
+                                <strong></strong>
+                                <span class="percentage"></span>
+                                <h4>CSS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Circle Chart Area =================-->
+
+        <!--================Service Solution for Tech bhukkads Area =================-->
+        <section id="ENotes" class="service_solution_area service_feature p_100" style="border: 0px;">
+            <div class="container">
+                <div class="row s_solution_inner">
+                    <div class="col-lg-6 col-12">
+                        <div class="s_solution_item">
+                            <div class="l_title">
+                                <img src="img/icon/title-icon.png" alt="">
+                                <h6>Web Development</h6>
+                                <h2>E Notes</h2>
+                            </div>
+                            <p>
+                                It is an web based application to provide soft copy of study material for subjects of our University. The users can create a free account to download the materials. The graphical user interface is simple and attractive so that the materials are easily
+                                accessible . A search bar is also provided for searching the relevant notes. Visit the full website at <a href="http://www.enotes.odishaoug.in">www.enotes.odishaoug.in</a>
+                            </p>
+                            <div id="accordion" role="tablist" class="solution_collaps">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOneOne">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseOneOne" aria-expanded="true" aria-controls="collapseOneOne">
+                                            Technology
+                                            <i class="minus">-</i>
+                                            <i class="plus">+</i>
+                                        </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOneOne" class="collapse show" role="tabpanel" aria-labelledby="headingOneOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                php <br> mysql <br> javaScript <br> html <br> css
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOneTwo">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseOneTwo" aria-expanded="false" aria-controls="collapseOneTwo">
+                                                Team
+                                            <i class="minus">-</i>
+                                            <i class="plus">+</i>
+                                        </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOneTwo" class="collapse" role="tabpanel" aria-labelledby="headingOneTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Ashok Mandal <br> Ankit Kumar <br> Ashish Kumar
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingOneThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseOneThree" aria-expanded="false" aria-controls="collapseOneThree">
+                                                Resources
+                                            <i class="minus">-</i>
+                                            <i class="plus">+</i>
+                                        </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOneThree" class="collapse" role="tabpanel" aria-labelledby="headingOneThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Not Available
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Service for Tech bhukkads Solution Area =================-->
+
+        <!--================Service Solution for CSR Area =================-->
+        <section id="OES" class="service_solution_area p_100" style="background-image:url(./img/service-bg-flip.jpg)">
+            <div class="container">
+                <div class="row s_solution_inner">
+                    <div class="col-lg-6 col-12">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="s_solution_item">
+                            <div class="l_title">
+                                <img src="img/icon/title-icon.png" alt="">
+                                <h6>Web Development</h6>
+                                <h2>Online Exam System</h2>
+                            </div>
+                            <p>
+                                Online Exam System was a major contribution by OOUG towards society, by using Online Exam System we were able to save paper and more than 1000 students appeared in SQL Exam. From last two years we have been conducting exam with help of this software.
+                                Soon we releasing a newer version of this software in coming days.
+                            </p>
+                            <div id="accordion" role="tablist" class="solution_collaps">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwoOne">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne">
+                                            Technology
+                                            <i class="minus">-</i>
+                                            <i class="plus">+</i>
+                                        </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwoOne" class="collapse show" role="tabpanel" aria-labelledby="headingTwoOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                php <br> mysql <br> javaScript <br> html <br> css
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwoTwo">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Team
+                                            <i class="minus">-</i>
+                                            <i class="plus">+</i>
+                                        </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwoTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwoTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Ajit Kumar Singh <br> Ankit <br> Ankit Goyal <br> Vikash Kumar Mahapatra
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingTwoThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwoThree" aria-expanded="false" aria-controls="collapseTwoThree">
+                                                Resources
+                                            <i class="minus">-</i>
+                                            <i class="plus">+</i>
+                                        </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwoThree" class="collapse" role="tabpanel" aria-labelledby="headingTwoThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Not Available
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Service for CSR Solution Area =================-->
+
+        <!--================Service Solution for Windows Area =================-->
+        <section id="windows" class="service_solution_area service_feature p_100" style="border: 0px;">
+            <div class="container">
+                <div class="row s_solution_inner">
+                    <div class="col-lg-6 col-12">
+                        <div class="s_solution_item">
+                            <div class="l_title">
+                                <img src="img/icon/title-icon.png" alt="">
+                                <h6>Web Development</h6>
+                                <h2>Windows 8 Website</h2>
+                            </div>
+                            <p>
+                                Windows 8 based website was designed for our mega event Sampark'13, it was designed keeping in mind the theme of latest operating system Windows 8. It proved to be a major attraction as students from all over the India appreciated our work.Thank You everyone.
+                            </p>
+                            <div id="accordion" role="tablist" class="solution_collaps">
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThreeOne">
+                                        <h5 class="mb-0">
+                                            <a data-toggle="collapse" href="#collapseThreeOne" aria-expanded="true" aria-controls="collapseThreeOne">
+                                        Technology
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseThreeOne" class="collapse show" role="tabpanel" aria-labelledby="headingThreeOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                php <br> mysql <br> javaScript <br> html <br> css
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThreeTwo">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseThreeTwo" aria-expanded="false" aria-controls="collapseThreeTwo">
+                                        Team
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThreeTwo" class="collapse" role="tabpanel" aria-labelledby="headingThreeTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Ajit Kumar Singh <br> Ankit <br> Ankit Goyal <br> Subham Swain <br> Tushar Singh <br> Prerna Punj
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="headingThreeThree">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseThreeThree" aria-expanded="false" aria-controls="collapseThreeThree">
+                                        Resources
+                                        <i class="minus">-</i>
+                                        <i class="plus">+</i>
+                                    </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThreeThree" class="collapse" role="tabpanel" aria-labelledby="headingThreeThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <p>
+                                                Not Available
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Service for Windows Solution Area =================-->
 
         <!-- ==== common footer with javaScript === -->
         <% include ../partials/footer.ejs %>
 
 </body>
 
-</html>
+</html>s
