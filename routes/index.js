@@ -1,20 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // preaparing routing pages.
 const INDEX = 'public/pages/index';
 const ABOUT = 'public/pages/about-us';
-const BLOG = 'public/pages/blog';
 const CONTACT = 'public/pages/contact';
 const GALLERY = 'public/pages/gallery';
 const SERVICE = 'public/pages/service';
 const EVENTS = 'public/pages/events';
 const TEAM = 'public/pages/team';
 const PROJECT = 'public/pages/project';
-const ELEMENTS = 'public/pages/elements';
-const ELEMENTSBLOG = 'public/pages/elementsBlog';
-const ELEMENTSGALLERY = 'public/pages/elementsGallery';
-const ELEMENTSSERVICE = 'public/pages/elementsService';
+const WORKSHOP = 'public/pages/workshop';
 const EROOR404 = '404';
 
 /* ============================================================
@@ -23,15 +19,13 @@ const EROOR404 = '404';
 
 // for domain
 let url = "";
-router.use('/*', function(req, res, next) {
+router.use(function(req, res, next) {
     // to get domain 
     let host = req.hostname;
     let protocol = req.protocol;
     url = protocol + "://" + host;
-    //console.log(domain);
     next();
 });
-
 
 /* ===============================================================
 ------------------------Root routing------------------------------
@@ -52,15 +46,6 @@ router.get('/about', function(req, res) {
         domain: url,
         activeStatus: 'about',
         title: "About | OOUG "
-    });
-});
-
-// blog page
-router.get('/blog', function(req, res) {
-    res.render(BLOG, {
-        domain: url,
-        activeStatus: 'blog',
-        title: "Blog | OOUG"
     });
 });
 
@@ -109,6 +94,15 @@ router.get('/gallery', function(req, res) {
     });
 });
 
+// workshop page
+router.get('/workshop', function(req, res) {
+    res.render(WORKSHOP, {
+        domain: url,
+        activeStatus: 'workshop',
+        title: "Workshop | OOUG "
+    });
+});
+
 // service page
 router.get('/service', function(req, res) {
     res.render(SERVICE, {
@@ -124,45 +118,6 @@ router.get('/events', function(req, res) {
         domain: url,
         activeStatus: 'events',
         title: "Events | OOUG"
-    });
-});
-
-// elements page
-router.get('/elements', function(req, res) {
-    res.render(ELEMENTS, {
-        domain: url,
-        activeStatus: 'elements',
-        title: "Elements | OOUG"
-    });
-});
-
-
-// elements blog page
-router.get('/elementsBlog', function(req, res) {
-    res.render(ELEMENTSBLOG, {
-        domain: url,
-        activeStatus: 'elements',
-        title: "Elements | Blog | OOUG"
-    });
-});
-
-
-// elements Gallery page
-router.get('/elementsGallery', function(req, res) {
-    res.render(ELEMENTSGALLERY, {
-        domain: url,
-        activeStatus: 'elements',
-        title: "Elements | Gallery | OOUG"
-    });
-});
-
-
-// elements page
-router.get('/elementsService', function(req, res) {
-    res.render(ELEMENTSSERVICE, {
-        domain: url,
-        activeStatus: 'elements',
-        title: "Elements | Service | OOUG"
     });
 });
 

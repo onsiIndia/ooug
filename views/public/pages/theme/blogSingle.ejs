@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>
-            <%= title %>
-        </title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/header.ejs %>
+    <title>
+        <%= title %>
+    </title>
+
+    <!-- ==== common nav bar === -->
+    <% include ../../partials/header.ejs %>
 
         <!--favicon-->
         <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
 
-    </head>
-    <body>
+</head>
 
-        <!-- ==== common nav bar === -->
-        <% include ../partials/nav.ejs %>
+<body>
+
+    <!-- ==== common nav bar === -->
+    <% include ../../partials/nav.ejs %>
 
         <!--================Banner Area =================-->
         <section class="banner_area">
@@ -32,7 +34,7 @@
             </div>
         </section>
         <!--================End Banner Area =================-->
-        
+
         <!--================Blog Main Area =================-->
         <section class="blog_main_area p_100">
             <div class="container">
@@ -48,14 +50,22 @@
                                     </div>
                                 </div>
                                 <div class="blog_text">
-                                    <a href="#"><h4>Let us introduce you the best apps</h4></a>
+                                    <a href="#">
+                                        <h4>Let us introduce you the best apps</h4>
+                                    </a>
                                     <div class="blog_author">
                                         <a href="#">By Lore Papp-Dinea</a>
                                         <a href="#">Design</a>
                                     </div>
-                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio ves-tibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. </p>
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor tempus. Donec maximus ipsum non ornare vestibulum. Sed libero nibh, feugiat at enim id, bibendum sollicitudin arcu. Aliquam elit nibh, finibus eget mauris non, pretium vehicula ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean metus metus, porttitor ac bibendum sit amet, mattis non erat. Duis libero eros, vehicula sit amet velit id, mattis venenatis massa.</p>
-                                    <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. Quisque laoreet vel risus et luctus. Fusce eleifend purus vel eros cursus imperdiet. Aliquam lacinia dolor sollicitudin pretium interdum. Nam velit dolor, eleifend eget felis ac, finibus accumsan dui. Fusce quis magna urna. </p>
+                                    <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio ves-tibul. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit.
+                                        Etiam nec odio vestibul.
+                                    </p>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequat ante ac congue. Quisque porttitor porttitor
+                                        tempus. Donec maximus ipsum non ornare vestibulum. Sed libero nibh, feugiat at enim id, bibendum sollicitudin arcu. Aliquam elit nibh, finibus eget mauris non, pretium vehicula ipsum. Class aptent taciti sociosqu
+                                        ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean metus metus, porttitor ac bibendum sit amet, mattis non erat. Duis libero eros, vehicula sit amet velit id, mattis venenatis massa.</p>
+                                    <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis
+                                        viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. Quisque laoreet vel risus et luctus. Fusce eleifend purus vel eros cursus imperdiet. Aliquam lacinia dolor sollicitudin pretium interdum.
+                                        Nam velit dolor, eleifend eget felis ac, finibus accumsan dui. Fusce quis magna urna. </p>
                                 </div>
                             </div>
                             <div class="s_blog_social">
@@ -133,8 +143,8 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search" aria-label="Search">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
-                                    </span>
+                                    <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+                                </span>
                                 </div>
                             </aside>
                             <aside class="r_widget categories_widget">
@@ -155,24 +165,36 @@
                                     <h3>Instagram</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-1.jpg" alt="">
-                                    </a></li>
-                                    <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-2.jpg" alt="">
-                                    </a></li>
-                                    <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-3.jpg" alt="">
-                                    </a></li>
-                                    <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-4.jpg" alt="">
-                                    </a></li>
-                                    <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-5.jpg" alt="">
-                                    </a></li>
-                                    <li><a href="https://www.instagram.com/?hl=en">
-                                        <img class="img-fluid" src="img/instagram/right-instagram/r-in-6.jpg" alt="">
-                                    </a></li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en">
+                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en">
+                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en">
+                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-3.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en">
+                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-4.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en">
+                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-5.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/?hl=en">
+                                            <img class="img-fluid" src="img/instagram/right-instagram/r-in-6.jpg" alt="">
+                                        </a>
+                                    </li>
                                 </ul>
                             </aside>
                             <aside class="r_widget tag_widget">
@@ -208,9 +230,10 @@
             </div>
         </section>
         <!--================End Blog Main Area =================-->
-        
-        <!-- ==== common footer with javaScript === -->
-        <% include ../partials/footer.ejs %>
 
-    </body>
+        <!-- ==== common footer with javaScript === -->
+        <% include ../../partials/footer.ejs %>
+
+</body>
+
 </html>
