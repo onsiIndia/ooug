@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>
+        <%= title %>
+    </title>
+
+    <!--favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- ==== common nav bar === -->
+    <link rel="stylesheet" href="css/404.css">
+
 </head>
 
 <body>
-    <h1 class="display-1">
-        EROOOR 404
-    </h1>
-    <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, enim architecto iste, facilis velit maxime in pariatur alias consectetur recusandae saepe ab veniam unde dolorem repellendus quisquam, accusantium et perferendis.
-    </h1>
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>404</h1>
+                <h2>Page not found</h2>
+            </div>
+            <a href="<%= domain %>">Homepage</a>
+        </div>
+    </div>
+
 </body>
 
 </html>

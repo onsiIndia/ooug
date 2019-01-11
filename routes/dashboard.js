@@ -11,8 +11,10 @@ router.get('/', function(req, res) {
 
 /* GET 404 page. */
 router.get('/*', function(req, res) {
-    console.log('error');
-    res.status(404).render(EROOR404);
+    res.status(404).render(EROOR404, {
+        domain: url,
+        title: "Error 404 | OOUG"
+    });
 });
 
 module.exports = router;
