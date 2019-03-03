@@ -1,44 +1,45 @@
 /* Main Menu Area css
 ============================================================================================ */
-.main_menu_area{
+
+.main_menu_area {
     position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
     z-index: 30;
     padding: 0px 45px;
-    .navbar{
+    .navbar {
         padding: 0px;
         border-radius: 0px;
         background-color: transparent !important;
-        .navbar-toggler{
+        .navbar-toggler {
             border: none;
             border-radius: 0px;
             padding: 0px;
-            span{
+            span {
                 height: 3px;
                 width: 25px;
                 display: block;
                 background: $dip;
                 margin-bottom: 3px;
-                &:last-child{
+                &:last-child {
                     margin-bottom: 0px;
                 }
             }
         }
-        .navbar-collapse{
-            @media (min-width: 992px){
+        .navbar-collapse {
+            @media (min-width: 992px) {
                 text-align: right;
                 display: block !important;
             }
         }
-        .navbar-nav{
+        .navbar-nav {
             display: inline-block;
             text-align: right;
-            li{
+            li {
                 display: inline-block;
                 margin-right: 55px;
-                a{
+                a {
                     font-size: 13px;
                     font-family: $rob;
                     font-weight: bold;
@@ -49,12 +50,12 @@
                     line-height: 118px;
                     @include transition;
                 }
-                &:last-child{
+                &:last-child {
                     margin-right: 0px;
                 }
-                &.submenu{
-                    .dropdown-menu{
-                        @media(min-width: 992px){
+                &.submenu {
+                    .dropdown-menu {
+                        @media(min-width: 992px) {
                             transform: scaleY(0);
                             transition: all 400ms ease-out;
                             display: block;
@@ -70,10 +71,10 @@
                             box-shadow: none;
                             visibility: hidden;
                         }
-                        li{
+                        li {
                             margin-right: 0px;
                             display: block;
-                            a{
+                            a {
                                 display: block;
                                 line-height: 38px;
                                 color: #fff;
@@ -86,47 +87,48 @@
                                 font-weight: normal;
                                 text-shadow: none;
                             }
-                            &:hover{
-                                a{
+                            &:hover {
+                                a {
                                     color: $baseColor;
                                 }
                             }
                         }
                     }
                 }
-                &:hover{
-                    @media(min-width: 992px){
-                        &.submenu{
-                            .dropdown-menu{
+                &:hover {
+                    @media(min-width: 992px) {
+                        &.submenu {
+                            .dropdown-menu {
                                 transform: scaleY(1);
                                 visibility: visible;
                             }
                         }
                     }
                 }
-                &:hover, &.active{
-                    a{
+                &:hover,
+                &.active {
+                    a {
                         color: $dip;
                     }
                 }
             }
         }
     }
-    &.navbar_fixed{
+    &.navbar_fixed {
         position: fixed;
         width: 100%;
         top: -70px;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, .6);  
+        background: rgba(0, 0, 0, 1);
         transform: translateY(70px);
         transition: transform 500ms ease, background 500ms ease;
         -webkit-transition: transform 500ms ease, background 500ms ease;
         z-index: 999999;
-        .navbar{
-            .navbar-nav{
-                li{
-                    a{
+        .navbar {
+            .navbar-nav {
+                li {
+                    a {
                         line-height: 70px;
                     }
                 }
@@ -134,5 +136,7 @@
         }
     }
 }
+
+
 /* End Main Menu Area css
 ============================================================================================ */
