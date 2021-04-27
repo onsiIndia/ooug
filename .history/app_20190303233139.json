@@ -1,8 +1,0 @@
-{
-  "name": "OOUG",
-  "description": "odisha oracle users group",
-  "repository": "https://github.com/onsiIndia/ooug",
-  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
-  "keywords": ["ooug", "giet", "heroku"],
-  "image": "heroku/nodejs"
-}
